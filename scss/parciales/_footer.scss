@@ -1,0 +1,38 @@
+
+.footer-container {
+    padding: 0;
+
+    height: 230px;
+    @media screen and(max-width: 576px) {
+        height: 500px;
+        
+    }
+
+    &-iconos a{
+        text-decoration: none;
+        color: #fff;
+        margin: 15px;
+        font-size: 30px;
+    
+        & a i:hover{
+            color: rgb(15, 252, 252);
+            
+        }
+
+        
+    }
+    
+    &-productos {
+        li{
+            list-style: none;
+        }
+        a {
+            @include footer
+        }
+    }
+
+    &-acercaDeNosotros {
+        @extend .footer-container-productos
+    }
+
+} 
