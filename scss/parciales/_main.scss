@@ -13,20 +13,24 @@
 
 /*scss de nosotros*/
 
-.nosotros {
-    display: flex;
-    width: 80%;
-    flex-direction: column;
+.nosotros-flex {
     text-align: center;
-    padding: 2rem;
-    
+    margin-top: 20px;
 
-    &-equipo {
-        display: flex;
-        justify-content: center;
-        margin: 2rem 3rem;
-        gap: 2rem;
 
+    &-titulo {
+        padding: 25px 0;
+        background-color: red;
     }
+
+
+    .equipo-grid-container{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+
 
 }

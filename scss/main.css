@@ -34,18 +34,19 @@ header nav img {
 }
 
 /*scss de nosotros*/
-.nosotros {
-  display: flex;
-  width: 80%;
-  flex-direction: column;
+.nosotros-flex {
   text-align: center;
-  padding: 2rem;
+  margin-top: 20px;
 }
-.nosotros-equipo {
-  display: flex;
+.nosotros-flex-titulo {
+  padding: 25px 0;
+  background-color: red;
+}
+.nosotros-flex .equipo-grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
   justify-content: center;
-  margin: 2rem 3rem;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 /*
