@@ -19,8 +19,12 @@
 
 
     &-titulo {
-        padding: 25px 0;
-        background-color: red;
+        display: inline-block;
+        padding: 15px 25px;
+        background-color: #86818E  ;
+        border-radius: 12%;
+
+        
     }
 
 
@@ -29,6 +33,7 @@
         grid-template-columns: auto auto auto;
         justify-content: center;
         gap: 1rem;
+        margin-bottom: 20px;
     }
 
 
