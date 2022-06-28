@@ -37,6 +37,7 @@ header nav img {
 .nosotros-flex {
   text-align: center;
   margin-top: 20px;
+  margin-bottom: 5rem;
 }
 .nosotros-flex-titulo {
   display: inline-block;
@@ -50,6 +51,26 @@ header nav img {
   justify-content: center;
   gap: 1rem;
   margin-bottom: 20px;
+}
+
+/* scss de servicios */
+.servicioTecnico-hero {
+  background: url("../../assets/placa-video.jpg") no-repeat center;
+  background-size: cover;
+  display: block;
+  color: #fff;
+  height: 50vh;
+  text-align: center;
+}
+.servicioTecnico-hero h2 {
+  padding: 100px 0;
+  font-size: 3rem;
+}
+.servicioTecnico-hero h2 span {
+  background-color: #EC1111;
+}
+.servicioTecnico .serviciosIconos {
+  font-size: 1.8rem;
 }
 
 /*

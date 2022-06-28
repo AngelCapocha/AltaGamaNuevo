@@ -16,6 +16,7 @@
 .nosotros-flex {
     text-align: center;
     margin-top: 20px;
+    margin-bottom: 5rem;
 
 
     &-titulo {
@@ -36,6 +37,34 @@
         margin-bottom: 20px;
     }
 
+}
 
+/* scss de servicios */ 
+
+.servicioTecnico {
+
+    &-hero{
+        background: url("../../assets/placa-video.jpg") no-repeat center;
+        background-size: cover;
+        display: block;
+        color: #fff;
+        height: 50vh;
+        text-align: center;
+        h2{
+            padding: 100px 0;
+            font-size: 3rem;
+            span{
+                background-color: #EC1111;
+            }
+        }
+        
+    }
+
+    .serviciosIconos {
+        
+        font-size: 1.8rem;
+    }
+
+    
 
 }
