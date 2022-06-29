@@ -1,56 +1,14 @@
-/*
-.footer-container {
-
-
-    height: 230px;
-    @media screen and(max-width: 576px) {
-        height: 500px;
-        
-        
-    }
-
-    li{
-        padding: 2px;
-    }
-
-    &-iconos a{
-        text-decoration: none;
-        color: #fff;
-        margin: 15px;
-        font-size: 2rem;
-    
-        & a i:hover{
-            color: rgb(15, 252, 252);
-            
-        }
-
-        
-    }
-    
-    &-productos {
-        li{
-            list-style: none;
-        }
-        a {
-        
-            @include footer
-        
-        }
-    }
-
-    &-acercaDeNosotros {
-        @extend .footer-container-productos
-    }
-
-} 
-
-*/
-
 
 .footer-flex {
     display: flex;
     justify-content: space-around;
     background-color: #000000;
+
+    @media screen and (max-width: 576px) {
+        flex-direction: column;
+        align-items: center;
+        
+    }
 
     
 
@@ -102,4 +60,9 @@
     position: absolute;
     bottom: 0;
     width: 100%;
+
+    @media screen and (max-width: 576px) {
+        position: relative;
+        margin-top: 10px;
+    }
 }

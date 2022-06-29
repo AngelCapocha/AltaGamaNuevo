@@ -1,5 +1,24 @@
 
  /* scss de index */
+.body-index {
+    @media screen and (max-width: 992px) {
+        padding-top: 80px;
+    }
+}
+
+.responsiveIndex{
+   display: none;
+   @media screen and (max-width: 576px) {
+    display: block;
+}
+   
+}
+
+ .carrusel {
+    @media screen and (max-width: 576px) {
+        display: none;
+    }
+ }
 .smarthphone{
     width: 300px;
     height: 300px;
@@ -12,6 +31,16 @@
 }
 
 /*scss de nosotros*/
+
+.body-nosotros {
+    @media screen and (max-width: 992px) {
+        padding-top: 80px;
+    }
+    @media screen and (max-width: 576px) {
+        padding-top: 80px;
+    }
+}
+
 
 .nosotros-flex {
     text-align: center;
@@ -35,13 +64,31 @@
         justify-content: center;
         gap: 1rem;
         margin-bottom: 20px;
+        @media screen and (max-width: 992px) {
+            grid-template-columns: auto auto;
+        }
+        @media screen and (max-width: 576px) {
+            grid-template-columns: auto;
+        }
+
     }
 
 }
 
 /* scss de servicios */ 
 
+.body-servicios{
+    @media screen and (max-width: 992px) {
+        padding-top: 60px;
+    }
+    @media screen and (max-width: 576px) {
+        padding-top: 60px;
+    }
+
+}
+
 .servicioTecnico {
+    
 
     &-hero{
         background: url("../../assets/placa-video.jpg") no-repeat center;
@@ -50,6 +97,7 @@
         color: #fff;
         height: 50vh;
         text-align: center;
+        
         h2{
             padding: 100px 0;
             font-size: 3rem;
@@ -62,9 +110,60 @@
 
     .serviciosIconos {
         
-        font-size: 1.8rem;
+        font-size: 2rem;
+
+
+        @media screen and (max-width: 992px) {
+            margin: 1.8rem 0;
+        }
+        @media screen and (max-width: 576px) {
+            margin: 1.5rem 0;
+        }
     }
 
     
 
 }
+
+/* scss de tienda */ 
+.body-tienda{
+    @media screen and (max-width: 992px) {
+        padding-top: 60px;
+    }
+    @media screen and (max-width: 576px) {
+        padding-top: 60px;
+    }
+}
+
+
+.tienda-responsive {
+    img{
+        @media screen and (max-width: 576px) {
+            display: none;
+        }
+    }
+    
+}
+
+.tienda {
+    @extend .nosotros-flex;
+
+    .productos {
+        @extend .equipo-grid-container;
+        grid-template-columns: auto auto auto auto;
+
+        @media screen and (max-width: 1024px) {
+            grid-template-columns: auto auto;
+        }
+
+        @media screen and (max-width: 576px) {
+            grid-template-columns: auto;
+        }
+
+        
+        
+    }
+}
+
+
+

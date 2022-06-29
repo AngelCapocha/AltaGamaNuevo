@@ -22,6 +22,27 @@ header nav img {
 }
 
 /* scss de index */
+@media screen and (max-width: 992px) {
+  .body-index {
+    padding-top: 80px;
+  }
+}
+
+.responsiveIndex {
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  .responsiveIndex {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .carrusel {
+    display: none;
+  }
+}
+
 .smarthphone {
   width: 300px;
   height: 300px;
@@ -34,7 +55,18 @@ header nav img {
 }
 
 /*scss de nosotros*/
-.nosotros-flex {
+@media screen and (max-width: 992px) {
+  .body-nosotros {
+    padding-top: 80px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .body-nosotros {
+    padding-top: 80px;
+  }
+}
+
+.nosotros-flex, .tienda {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 5rem;
@@ -45,15 +77,36 @@ header nav img {
   background-color: #86818E;
   border-radius: 12%;
 }
-.nosotros-flex .equipo-grid-container {
+.nosotros-flex .equipo-grid-container, .tienda .equipo-grid-container, .tienda .productos {
   display: grid;
   grid-template-columns: auto auto auto;
   justify-content: center;
   gap: 1rem;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 992px) {
+  .nosotros-flex .equipo-grid-container, .tienda .equipo-grid-container, .tienda .productos {
+    grid-template-columns: auto auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  .nosotros-flex .equipo-grid-container, .tienda .equipo-grid-container, .tienda .productos {
+    grid-template-columns: auto;
+  }
+}
 
 /* scss de servicios */
+@media screen and (max-width: 992px) {
+  .body-servicios {
+    padding-top: 60px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .body-servicios {
+    padding-top: 60px;
+  }
+}
+
 .servicioTecnico-hero {
   background: url("../../assets/placa-video.jpg") no-repeat center;
   background-size: cover;
@@ -70,60 +123,61 @@ header nav img {
   background-color: #EC1111;
 }
 .servicioTecnico .serviciosIconos {
-  font-size: 1.8rem;
+  font-size: 2rem;
+}
+@media screen and (max-width: 992px) {
+  .servicioTecnico .serviciosIconos {
+    margin: 1.8rem 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  .servicioTecnico .serviciosIconos {
+    margin: 1.5rem 0;
+  }
 }
 
-/*
-.footer-container {
+/* scss de tienda */
+@media screen and (max-width: 992px) {
+  .body-tienda {
+    padding-top: 60px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .body-tienda {
+    padding-top: 60px;
+  }
+}
 
+@media screen and (max-width: 576px) {
+  .tienda-responsive img {
+    display: none;
+  }
+}
 
-    height: 230px;
-    @media screen and(max-width: 576px) {
-        height: 500px;
+.tienda .productos {
+  grid-template-columns: auto auto auto auto;
+}
+@media screen and (max-width: 1024px) {
+  .tienda .productos {
+    grid-template-columns: auto auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  .tienda .productos {
+    grid-template-columns: auto;
+  }
+}
 
-
-    }
-
-    li{
-        padding: 2px;
-    }
-
-    &-iconos a{
-        text-decoration: none;
-        color: #fff;
-        margin: 15px;
-        font-size: 2rem;
-
-        & a i:hover{
-            color: rgb(15, 252, 252);
-
-        }
-
-
-    }
-
-    &-productos {
-        li{
-            list-style: none;
-        }
-        a {
-
-            @include footer
-
-        }
-    }
-
-    &-acercaDeNosotros {
-        @extend .footer-container-productos
-    }
-
-} 
-
-*/
 .footer-flex {
   display: flex;
   justify-content: space-around;
   background-color: #000000;
+}
+@media screen and (max-width: 576px) {
+  .footer-flex {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .footer-flex-nosotros, .footer-flex-redes, .footer-flex-productos {
   color: #fff;
@@ -161,4 +215,10 @@ header nav img {
   position: absolute;
   bottom: 0;
   width: 100%;
+}
+@media screen and (max-width: 576px) {
+  .footer-contacto {
+    position: relative;
+    margin-top: 10px;
+  }
 }/*# sourceMappingURL=main.css.map */
