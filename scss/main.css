@@ -167,6 +167,11 @@ header nav img {
     grid-template-columns: auto;
   }
 }
+.tienda .ventana-modal {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
 
 .footer-flex {
   display: flex;
